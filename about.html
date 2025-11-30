@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Urja Academy - About Us</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/recoleta-font.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700");
+        /* Variables */
+
+
+        body {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+        }
+
+        /* Layout */
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        /* Styling */
+        .timeline {
+            margin: 4em auto;
+            position: relative;
+            max-width: 60em;
+        }
+
+        .timeline:before {
+            background-color: black;
+            content: "";
+            margin-left: -1px;
+            position: absolute;
+            top: 0;
+            left: 2em;
+            width: 2px;
+            height: 100%;
+        }
+
+        .timeline-event {
+            position: relative;
+        }
+
+        .timeline-event:hover .timeline-event-icon {
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            background-color: #a83279;
+        }
+
+        .timeline-event:hover .timeline-event-thumbnail {
+            -moz-box-shadow: inset 40em 0 0 0 #a83279;
+            -webkit-box-shadow: inset 40em 0 0 0 #a83279;
+            box-shadow: inset 40em 0 0 0 #a83279;
+        }
+
+        .timeline-event-copy {
+            position: relative;
+            top: -1.875em;
+            left: 4em;
+            width: 80%;
+        }
+
+        .timeline-event-copy h3 {
+            font-size: 1.75em;
+        }
+
+        .timeline-event-copy h4 {
+            font-size: 1.2em;
+            margin-bottom: 1.2em;
+        }
+
+        .timeline-event-copy strong {
+            font-weight: 700;
+        }
+
+        .timeline-event-copy p:not(.timeline-event-thumbnail) {
+            padding-bottom: 1.2em;
+        }
+
+        .timeline-event-icon {
+            -moz-transition: -moz-transform 0.2s ease-in;
+            -o-transition: -o-transform 0.2s ease-in;
+            -webkit-transition: -webkit-transform 0.2s ease-in;
+            transition: transform 0.2s ease-in;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: black;
+            outline: 10px solid white;
+            display: block;
+            margin: 0.5em 0.5em 0.5em -0.5em;
+            position: absolute;
+            top: 0;
+            left: 2em;
+            width: 1em;
+            height: 1em;
+        }
+
+        .timeline-event-thumbnail {
+            -moz-transition: box-shadow 0.5s ease-in 0.1s;
+            -o-transition: box-shadow 0.5s ease-in 0.1s;
+            -webkit-transition: box-shadow 0.5s ease-in;
+            -webkit-transition-delay: 0.1s;
+            transition: box-shadow 0.5s ease-in 0.1s;
+            color: white;
+            font-size: 0.75em;
+            background-color: black;
+            -moz-box-shadow: inset 0 0 0 0em #ef795a;
+            -webkit-box-shadow: inset 0 0 0 0em #ef795a;
+            box-shadow: inset 0 0 0 0em #ef795a;
+            display: inline-block;
+            margin-bottom: 1.2em;
+            padding: 0.25em 1em 0.2em 1em;
+        }
+
+        .about-timeline {
+            --color: rgba(30, 30, 30);
+            --bgColor: rgba(245, 245, 245);
+            font-family: "Poppins", sans-serif;
+            padding: 2rem 0;
+            color: var(--color);
+        }
+
+        .about-timeline h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .about-timeline ul {
+            --col-gap: 2rem;
+            --row-gap: 2rem;
+            --line-w: 0.25rem;
+            display: grid;
+            grid-template-columns: var(--line-w) 1fr;
+            grid-auto-columns: max-content;
+            column-gap: var(--col-gap);
+            list-style: none;
+            /* width: min(60rem, 90%); */
+            margin-inline: auto;
+        }
+
+        /* line */
+        .about-timeline ul::before {
+            content: "";
+            grid-column: 1;
+            grid-row: 1 / span 20;
+            background: rgb(225, 225, 225);
+            border-radius: calc(var(--line-w) / 2);
+        }
+
+        /* row gaps */
+        .about-timeline ul li:not(:last-child) {
+            margin-bottom: var(--row-gap);
+        }
+
+        /* card */
+        .about-timeline ul li {
+            grid-column: 2;
+            --inlineP: 1.5rem;
+            margin-inline: var(--inlineP);
+            grid-row: span 2;
+            display: grid;
+            grid-template-rows: min-content min-content min-content;
+        }
+
+        /* date */
+        ul li .date {
+            --dateH: 3rem;
+            height: var(--dateH);
+            margin-inline: calc(var(--inlineP) * -1);
+
+            text-align: center;
+            background-color: var(--accent-color);
+
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+
+            display: grid;
+            place-content: center;
+            position: relative;
+
+            border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+        }
+
+        /* date flap */
+        ul li .date::before {
+            content: "";
+            width: var(--inlineP);
+            aspect-ratio: 1;
+            background: var(--accent-color);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+            position: absolute;
+            top: 100%;
+
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            right: 0;
+        }
+
+        /* circle */
+        ul li .date::after {
+            content: "";
+            position: absolute;
+            width: 2rem;
+            aspect-ratio: 1;
+            background: var(--bgColor);
+            border: 0.3rem solid var(--accent-color);
+            border-radius: 50%;
+            top: 50%;
+
+            transform: translate(50%, -50%);
+            right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+        }
+
+        /* title descr */
+        ul li .title,
+        ul li .descr {
+            background: var(--bgColor);
+            position: relative;
+            padding-inline: 1.5rem;
+        }
+
+        ul li .title {
+            overflow: hidden;
+            padding-block-start: 1.5rem;
+            padding-block-end: 1rem;
+            font-weight: 500;
+        }
+
+        ul li .descr {
+            padding-block-end: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* shadows */
+        ul li .title::before,
+        ul li .descr::before {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 0.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            left: 50%;
+            border-radius: 50%;
+            filter: blur(4px);
+            transform: translate(-50%, 50%);
+        }
+
+        ul li .title::before {
+            bottom: calc(100% + 0.125rem);
+        }
+
+        ul li .descr::before {
+            z-index: -1;
+            bottom: 0.25rem;
+        }
+
+        @media (min-width: 40rem) {
+            .about-timeline ul {
+                grid-template-columns: 1fr var(--line-w) 1fr;
+            }
+
+            .about-timeline ul::before {
+                grid-column: 2;
+            }
+
+            .about-timeline ul li:nth-child(odd) {
+                grid-column: 1;
+            }
+
+            .about-timeline ul li:nth-child(even) {
+                grid-column: 3;
+            }
+
+            /* start second card */
+            ul li:nth-child(2) {
+                grid-row: 2/4;
+            }
+
+            ul li:nth-child(odd) .date::before {
+                clip-path: polygon(0 0, 100% 0, 100% 100%);
+                left: 0;
+            }
+
+            ul li:nth-child(odd) .date::after {
+                transform: translate(-50%, -50%);
+                left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+            }
+
+            ul li:nth-child(odd) .date {
+                border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+            }
+        }
+
+        .credits {
+            margin-top: 1rem;
+            text-align: right;
+        }
+
+        .credits a {
+            color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- backtotop - start -->
+    <div class="xb-backtotop">
+        <a href="#" class="scroll">
+            <i class="far fa-arrow-up"></i>
+        </a>
+    </div>
+    <!-- backtotop - end -->
+
+    <!-- Preloader - Start -->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/preloader.png" alt="preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader - End -->
+
+
+    <div class="body_wrap">
+
+        <!-- header start -->
+        <script src="header.js"></script>
+        <!-- header end -->
+
+        <!-- header search start -->
+        <div class="header-search-form-wrapper">
+            <div class="xb-search-close xb-close"></div>
+            <div class="header-search-container">
+                <form role="search" class="search-form" action="#">
+                    <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    <button type="submit" class="search-submit"><i class="far fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- header search end -->
+
+        <!-- main area start  -->
+        <main>
+
+            <!-- breadcrumb start -->
+            <section class="breadcrumb bg_img ul_li" data-background="assets/img/bg/breadcrumb_bg.jpg">
+                <div class="container">
+                    <div class="breadcrumb__content text-center">
+                        <h2 class="breadcrumb__title">About us</h2>
+                        <p class="breadcrumb__desc">A urja academy for the Public Good</p>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb end -->
+
+            <!-- feature + about section start  -->
+            <section class="about hs-about pt-70 pb-70 pos-rel">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-6">
+                            <div class="hs-about_left mt-20">
+                                <div class="about-img wow skewIn">
+                                    <img style="border-radius: 5px;" src="assets/img/event/urjja_event/39.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hs-about-right ml-70 mt-20 wow fadeInLeft" data-wow-delay="200ms"
+                                data-wow-duration=".6s">
+                                <div class="section-title mb-20">
+                                    <span class="sub-title">About Us</span>
+                                    <h1 class="title">Urja Academy – The Power of Possibility</h1>
+
+                                    <p class="hs-content mt-25">
+                                        Founded in 2015, URJA ACADEMY provides flexible, skill-based online programs
+                                        that equip learners with
+                                        practical, in-demand skills for a competitive future.
+                                    </p>
+
+
+                                </div>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li>Modern, skill-based online learning.</li>
+                                    <li>Flexible and affordable training programs.</li>
+                                    <li>Trusted by thousands of learners since 2015.</li>
+                                </ul>
+                                <div class="xb-btn mt-35">
+                                    <a class="thm-btn thm-btn--stroke-black hover-2" href="contact.html">
+                                        Get In Touch
+                                        <span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 4.84993V16.7399C22 17.7099 21.21 18.5999 20.24 18.7199L19.93 18.7599C18.29 18.9799 15.98 19.6599 14.12 20.4399C13.47 20.7099 12.75 20.2199 12.75 19.5099V5.59993C12.75 5.22993 12.96 4.88993 13.29 4.70993C15.12 3.71993 17.89 2.83993 19.77 2.67993H19.83C21.03 2.67993 22 3.64993 22 4.84993Z"
+                                                    fill="#170006"></path>
+                                                <path
+                                                    d="M10.71 4.70993C8.87999 3.71993 6.10999 2.83993 4.22999 2.67993H4.15999C2.95999 2.67993 1.98999 3.64993 1.98999 4.84993V16.7399C1.98999 17.7099 2.77999 18.5999 3.74999 18.7199L4.05999 18.7599C5.69999 18.9799 8.00999 19.6599 9.86999 20.4399C10.52 20.7099 11.24 20.2199 11.24 19.5099V5.59993C11.24 5.21993 11.04 4.88993 10.71 4.70993ZM4.99999 7.73993H7.24999C7.65999 7.73993 7.99999 8.07993 7.99999 8.48993C7.99999 8.90993 7.65999 9.23993 7.24999 9.23993H4.99999C4.58999 9.23993 4.24999 8.90993 4.24999 8.48993C4.24999 8.07993 4.58999 7.73993 4.99999 7.73993ZM7.99999 12.2399H4.99999C4.58999 12.2399 4.24999 11.9099 4.24999 11.4899C4.24999 11.0799 4.58999 10.7399 4.99999 10.7399H7.99999C8.40999 10.7399 8.74999 11.0799 8.74999 11.4899C8.74999 11.9099 8.40999 12.2399 7.99999 12.2399Z"
+                                                    fill="#170006"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!-- our history -->
+
+            <section class="history-section about-timeline pt-60 pb-60" id="history">
+                <div class="container">
+                    <div class="section-title text-center mb-30">
+                        <h2 class="title">Our Story – History & Background of URJA ACADEMY</h2>
+                    </div>
+
+                    <p class="lead text-center mb-40">Every great movement starts with a spark. For URJA ACADEMY, that
+                        spark was lit in 2015 with a simple but powerful belief: Education should not just inform — it
+                        should transform.</p>
+
+                    <ul class="timeline">
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Founding</p>
+                                <h3>How We Began</h3>
+                                <p>What began as a small B.Ed. counselling initiative for aspiring teachers quickly
+                                    evolved into a hub of opportunity — a place where learners prepare for competitive
+                                    exams, gain career guidance, and find pathways to top universities in India and
+                                    abroad.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2015</p>
+                                <h3>Started with B.Ed. counselling</h3>
+                                <p>Started with B.Ed. counselling, helping aspiring teachers choose the right path and
+                                    laying the foundation for a student-first approach.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2017</p>
+                                <h3>Expanded into competitive coaching</h3>
+                                <p>Expanded into competitive coaching — OSSTET, CTET, OTET — achieving high student
+                                    success rates through focused mentoring and exam-oriented training.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2020</p>
+                                <h3>Took a digital leap</h3>
+                                <p>Launched online programs so learners could join from anywhere, increasing
+                                    accessibility and flexibility for students across regions.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">2023</p>
+                                <h3>Partnered with universities</h3>
+                                <p>Partnered with universities across India and abroad, opening global opportunities and
+                                    pathways for higher education for our students.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Today</p>
+                                <h3>Where we are now</h3>
+                                <p>Today: We are a trusted education and counselling ecosystem, guiding students at
+                                    every stage — from entrance exams to career placement.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline-event">
+                            <label class="timeline-event-icon"></label>
+                            <div class="timeline-event-copy">
+                                <p class="timeline-event-thumbnail">Our Values</p>
+                                <h3>What We Stand For</h3>
+                                <p><strong>Confidence</strong> – so learners feel ready for the real world.<br>
+                                    <strong>Clarity</strong> – so every decision, from B.Ed. admission to university
+                                    choice, is the right one.<br>
+                                    <strong>Care</strong> – because we believe in mentorship that sees the person behind
+                                    the student.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <b class="text-center pl-10">Our story is still being written — and every student who walks
+                        through our
+                        doors
+                        becomes part of it. Together, we are building a future where education is
+                        empowering, opportunity is accessible, and success is within everyone’s reach.</b>
+                </div>
+            </section>
+            <!-- feature + about section end  -->
+            <section class="cta" id="explore">
+                <div class="cta-wrapper bg_img pt-115 pb-120"
+                    data-background="https://html.xpressbuddy.com/edubost/assets/img/cta/cta-bg.jpg"
+                    style="background-image: url('https://html.xpressbuddy.com/edubost/assets/img/cta/cta-bg.jpg');">
+                    <div class="container">
+                        <div class="xb-cta-wrap z-1 pos-rel">
+                            <div class="section-title text-center mb-40">
+                                <span class="sub-title">Explore Us</span>
+                                <h2 class="title mb-35">Learn. Grow. Succeed.</h2>
+                                <p class="cta-content">
+                                    At URJA ACADEMY, we make learning accessible and practical for today’s learners.
+                                    Our expert-designed programs empower you with the skills you need to build a
+                                    brighter future. Whether you’re upgrading your knowledge or starting a new journey,
+                                    we are here to guide you every step of the way.
+                                </p>
+                            </div>
+                            <div class="cta-btn btns justify-content-center ul_li">
+                                <a class="thm-btn thm-btn--white" href="notes.html">Get Notes
+                                    <span><img src="assets/img/icon/book.svg" alt="Notes"></span>
+                                </a>
+                                <a class="thm-btn thm-btn--white" href="application.html">Start Your Application
+                                    <span><img src="assets/img/icon/learning.png" alt="Application"></span>
+                                </a>
+                                <a class="thm-btn thm-btn--white" href="contact.html">Get in Touch
+                                    <span><img src="/assets/img/icon/warning.png" alt="Contact"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- fanfact section start  -->
+            <!-- <section class="fanfact pt-120 pb-120" id="explore">
+                <div class="container">
+                    <div class="section-title text-center mb-60">
+                        <span class="sub-title">Explore Us</span>
+                        <h2 class="title">URJA ACADEMY By The Numbers</h2>
+                    </div>
+                    <div class="row mt-none-30">
+                        <div class="col-lg-4 mt-30">
+                            <div class="clg-fanfact">
+                                <div class="xb-fanfact_item clr-gray">
+                                    <span class="xb-item--number">1,500+</span>
+                                    <span class="xb-item--contant">Students enrolled in <br> skill-based courses</span>
+                                </div>
+                                <div class="xb-fanfact_wrap mt-30">
+                                    <div class="fanfact-img">
+                                        <img src="assets/img/fanfact/fanfact-img01.png" alt="">
+                                    </div>
+                                    <div class="xb-fanfact_item">
+                                        <span class="xb-item--number">95%</span>
+                                        <span class="xb-item--contant">Positive feedback from learners on course
+                                            quality</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-30">
+                            <div class="clg-fanfact">
+                                <div class="xb-fanfact_wrap clr-primary mb-30">
+                                    <div class="fanfact-img">
+                                        <img src="assets/img/fanfact/fanfact-img02.png" alt="">
+                                    </div>
+                                    <div class="xb-fanfact_item">
+                                        <span class="xb-item--number">500+</span>
+                                        <span class="xb-item--contant">Comprehensive notes & resources provided</span>
+                                    </div>
+                                </div>
+                                <div class="xb-fanfact_item clr-heading">
+                                    <span class="xb-item--number">30+</span>
+                                    <span class="xb-item--contant">Short-term certification courses available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-30">
+                            <div class="clg-fanfact">
+                                <div class="xb-fanfact_item clr-violate">
+                                    <span class="xb-item--number">24/7</span>
+                                    <span class="xb-item--contant">Access to study material anytime, anywhere</span>
+                                </div>
+                                <div class="xb-fanfact_wrap clr-gray mt-30">
+                                    <div class="fanfact-img">
+                                        <img src="assets/img/fanfact/fanfact-img03.png" alt="">
+                                    </div>
+                                    <div class="xb-fanfact_item">
+                                        <span class="xb-item--number">100+</span>
+                                        <span class="xb-item--contant">Expert mentors guiding students online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- fanfact section end  -->
+
+            <!-- team start -->
+            <!-- team end -->
+
+            <!-- about start -->
+            <section class="about pt-60 pb-60" id="whyus">
+                <div class="container">
+                    <div class="row align-items-center mt-none-30">
+                        <div class="col-xl-6 col-lg-5 mt-30">
+                            <div class="about-image">
+                                <img src="assets/img/about/about-img03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mt-30">
+                            <div class="about-content">
+                                <div class="section-title mb-60">
+                                    <span class="sub-title">why us better</span>
+                                    <h2 class="title">why our Academy is <br> better than others? </h2>
+                                </div>
+                                <div class="about-iconbox">
+                                    <div class="row mt-none-30">
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_01.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">academic resources</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_02.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">Best Notes</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_03.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">coaching teacher</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_04.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">Cost Effective</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_05.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">Holistic Curriculum</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-30">
+                                            <div class="about-iconbox-item ul_li">
+                                                <div class="xb-item--icon">
+                                                    <img src="assets/img/icon/ab_06.svg" alt="">
+                                                </div>
+                                                <h3 class="xb-item--title">student support</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about end -->
+
+            <!-- mission vision start -->
+            <section class="mission-vission z-1 pos-rel pt-70 pb-130">
+                <div class="mission-vission-bg" data-background="assets/img/bg/vm_bg.jpg"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center mb-65">
+                                <h2 class="title mb-15">our mission and vision</h2>
+                                <p style="text-align: center;">Mission is to empower individuals through high-quality
+                                    institution — we are a launchpad for dreams.
+                                    Our vision is to become India’s most trusted education and counselling hub,
+                                    recognised globally for shaping futures with care, integrity, and excellence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-none-30">
+                        <div class="col-lg-6 mt-30">
+                            <div class="mission-vission-item">
+                                <h3 class="xb-item--title">Our Mission</h3>
+                                <p class="xb-item--content">At URJA ACADEMY, our mission is to be more than an
+                                    institution — we are a launchpad for dreams.
+                                    We exist to empower students, educators, and professionals by providing:</p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, you can:</h4>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Expert B.Ed.
+                                        counselling, guiding aspiring teachers toward the right career path.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Competitive exam
+                                        preparation and personalised coaching for OSSTET, CTET, OTET, and other key
+                                        examinations.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>University enrolment
+                                        support, connecting learners to leading colleges and universities in India and
+                                        abroad.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Our goal is to create a
+                                        complete ecosystem where learners are guided, trained, and supported from their
+                                        first step in education to their ultimate career destination.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Develop critical
+                                        thinking and leadership skills.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Learn in an inclusive
+                                        online environment.</li> -->
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <div class="shape shape--1">
+                                        <img src="assets/img/shape/vm_shape1.png" alt="">
+                                    </div>
+                                    <div class="shape shape--2">
+                                        <img src="assets/img/shape/vm_shape2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mission-vission-item">
+                                <h3 class="xb-item--title">Our Vision</h3>
+                                <p class="xb-item--content">Our vision is to become India’s most trusted education and
+                                    counselling hub, recognised globally for shaping futures with care, integrity, and
+                                    excellence.
+                                </p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, aspire to:</h4>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Be the go-to
+                                        destination for B.Ed. aspirants and competitive exam candidates seeking quality
+                                        coaching and guidance.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Build a network of top
+                                        Indian and international universities to open global doors for our students.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Create a platform where
+                                        personalised mentorship and future-focused training go hand-in-hand.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Inspire learners to
+                                        become leaders, innovators, and contributors in society, equipped with both
+                                        knowledge and character.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Collaborate with
+                                        industry experts and mentors.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Adapt to the changing
+                                        professional landscape.</li> -->
+
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <div class="shape shape--1">
+                                        <img src="assets/img/shape/vm_shape1.png" alt="">
+                                    </div>
+                                    <div class="shape shape--2">
+                                        <img src="assets/img/shape/vm_shape2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- mission vision end -->
+
+            <!-- core values start -->
+            <section class="core-values-section section_space pt-0" id="Our-Core-Values">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="section-title text-center mb-50">
+                                <h2 class="title mb-15">Our Core Values</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Value 1 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h3>Student-Centred Approach</h3>
+                                <p>Every decision we make is guided by what benefits the learner — their success is our
+                                    success.</p>
+                            </div>
+                        </div>
+                        <!-- Value 2 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3>Educational Excellence</h3>
+                                <p>We hold ourselves to high standards of teaching, mentorship, and counselling,
+                                    ensuring each learner receives accurate guidance and the best preparation.</p>
+                            </div>
+                        </div>
+                        <!-- Value 3 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h3>Global Mindset</h3>
+                                <p>We help students think beyond borders, preparing them for opportunities not just
+                                    locally, but in India's best universities and world-class institutions abroad.</p>
+                            </div>
+                        </div>
+                        <!-- Value 4 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>Integrity & Transparency</h3>
+                                <p>We provide honest guidance, clear pathways, and ethical counselling — because trust
+                                    is the foundation of education.</p>
+                            </div>
+                        </div>
+                        <!-- Value 5 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Holistic Growth</h3>
+                                <p>We focus on academics, critical thinking, and personal development — shaping learners
+                                    into confident, well-rounded individuals.</p>
+                            </div>
+                        </div>
+                        <!-- Value 6 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h3>Lifelong Support</h3>
+                                <p>Our relationship doesn't end at admission or examination. We continue to guide
+                                    learners with mentorship, career advice, and global opportunities.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <style>
+                    .core-value-card {
+                        background: #fff;
+                        padding: 30px;
+                        border-radius: 15px;
+                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                        text-align: center;
+                    }
+
+                    .core-value-card:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .value-icon {
+                        width: 70px;
+                        height: 70px;
+                        background: var(--theme-color);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                    }
+
+                    .value-icon i {
+                        font-size: 30px;
+                        color: #fff;
+                    }
+
+                    .core-value-card h3 {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        color: var(--theme-color);
+                    }
+
+                    .core-value-card p {
+                        font-size: 17px;
+                        line-height: 1.6;
+                        color: #666;
+                        margin: 0;
+                    }
+
+                    .team-single__content p {
+                        font-size: 17px;
+                        line-height: 1.6;
+                        margin-bottom: 15px;
+                    }
+
+                    .team-single__content ul {
+                        font-size: 15px;
+                        line-height: 1.6;
+                        margin-left: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .team-single__content ul li {
+                        margin-bottom: 10px;
+                    }
+
+                    .team-single__content h2 {
+                        margin-bottom: 20px;
+                    }
+                </style>
+            </section>
+            <!-- core values end -->
+
+            <!-- team start -->
+            <!-- <section class="team-single pt-120 pb-110" data-bg-color="#F1F1E9" id="director">
+                <div class="container">
+                    <div class="team-single__inner">
+                        <div class="team-single__info ul_li mb-40">
+                            <div class="xb-item--avatar">
+                                <img src="assets/img/team/adviser.png" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--name">Dr. Ajaya Kumar Behera</h3>
+                                <ul class="xb-item--list list-unstyled mb-60">
+                                    <li><span>Responsibility:</span> Adviser – URJA ACADEMY</li>
+                                    <li><span>Email:</span> ajaya@example.com</li>
+                                    <li><span>Phone:</span> +91 XXXXX XXXXX</li>
+                                </ul>
+                                <h3 class="team-single__social-title">Social Media</h3>
+                                <ul class="xb-social ul_li mt-25">
+                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#!">
+                                          
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="team-single__hr">
+                        <h2>Adviser’s Message</h2>
+                        <br>
+                        <p>Welcome to <strong>URJA ACADEMY</strong> – a place where education is not just delivered
+                            but experienced as a journey of transformation.</p>
+                        <p>As the Adviser of URJA ACADEMY, I am deeply proud of the role our institution plays in
+                            shaping the future of aspiring educators, competitive exam candidates, and global
+                            learners. Education today is no longer about memorising facts — it is about building
+                            skills, confidence, and purpose that allow individuals to thrive in a rapidly changing
+                            world.</p>
+                        <p>At URJA ACADEMY, we are committed to:</p>
+                        <ul>
+                            <li>Guiding B.Ed. aspirants with accurate counselling so they choose the right pathway
+                                into teaching.</li>
+                            <li>Providing comprehensive coaching for OSSTET, CTET, OTET, and other competitive
+                                examinations that open doors to rewarding careers.</li>
+                            <li>Connecting students with top universities in India and abroad, enabling them to
+                                pursue degrees and professional courses that match their dreams.</li>
+                        </ul>
+                        <p>What sets us apart is not just the quality of our teaching but the care and mentorship we
+                            offer. We believe every learner is unique, and we work tirelessly to provide
+                            personalised guidance, curated resources, and future-ready training that prepare them
+                            for success in real-world scenarios.</p>
+                        <p>As you explore our website, I encourage you to see URJA ACADEMY not only as an
+                            institution, but as a partner in your growth journey. Whether you are preparing for a
+                            competitive exam, seeking admission guidance, or looking to upgrade your skills, we are
+                            here to walk beside you, every step of the way.</p>
+                        <p>Let us learn, grow, and lead together — because at URJA ACADEMY, your success is our
+                            mission, and your future is our vision.</p>
+                        <p><strong>Warm regards,</strong><br>Dr. Ajaya Kumar Behera<br>Adviser – URJA ACADEMY</p>
+                    </div>
+                </div>
+            </section> -->
+            <!-- team end -->
+            <style>
+                /* CTA image responsive sizing */
+                .cta-image img {
+                    border-radius: 10px;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                /* Make image smaller and on top on small screens */
+                @media (max-width: 767.98px) {
+                    .cta-image img {
+                        max-width: 220px;
+                        width: 60%;
+                    }
+                }
+            </style>
+            <section class="cta pt-40 pb-40" id="director" style="background-color: #f1f1e9;">
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 mt-30 order-2 order-lg-1">
+                            <div class="section-title section-title--md">
+                                <span class="sub-title">Our Director</span>
+                                <h2 class="title mb-20">N.Santosh Kumar Reddy </h2><i
+                                    style="padding-left:10px ; color: #ecb726;;">MA(Eng
+                                    ), M.ED, MBA</i><br>
+                                <p style="text-align: justify;">
+                                    Founded in 2015, URJA ACADEMY has become a trusted destination for students,
+                                    educators, and aspirants who want to turn their ambitions into achievements.
+                                    <br>
+                                    • We proudly serve as one of the region’s most respected B.Ed., M.Ed. & B.P.Ed.
+                                    Counselling Centres, guiding aspiring teachers to the right programs and
+                                    universities with expert advice. Over the years, we have expanded our mission to
+                                    include:
+                                    <br>
+                                    • Competitive Exam Coaching: Specialised training/ coaching for B.Ed Entrance
+                                    OSSTET,
+                                    CTET, OTET, OAVS, KVS, Junior Teacher, and other teaching eligibility tests — with
+                                    outstanding success rates.
+                                    <br>
+                                    • University Admission Guidance: Helping students secure seats in top universities
+                                    across India and abroad, shaping their academic and professional futures.
+                                    <br>
+                                    • Quality Resources: Well-structured notes, targeted study materials, and
+                                    personalised
+                                    mentorship trusted by thousands of learners.
+                                    <br>
+                                    <br>
+                                    What makes URJA ACADEMY stand out is our commitment to
+                                    excellence — we blend experienced faculty, modern teaching methods, and a
+                                    student-first approach to ensure every learner gets the direction and confidence
+                                    they need to succeed.
+
+                                    This calendar is more than dates; it is a celebration of our achievers and a
+                                    reminder that with the right guidance, your name can be next.
+                                    <br>
+                                    📢 Join URJA ACADEMY today — where learning meets opportunity and dreams turn into
+                                    success stories.
+                                    <br>
+                                    <br>
+                                    I wish you all a very bright future.
+                                </p>
+                            </div>
+                            <div class="admission-btn mt-40">
+                                <a class="thm-btn" href="contact.html">talk to an me
+                                    <span class="icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.4795 21C9.10959 21 7.81507 20.7539 6.59589 20.2617C5.37671 19.7695 4.30137 19.0962 3.36986 18.2417C2.43836 17.3872 1.67808 16.3857 1.08904 15.2373C0.486301 14.0752 0.123288 12.8311 0 11.5049V11.4639H8.56849V14.3145C8.56849 14.5742 8.66096 14.7998 8.84589 14.9912C9.03082 15.1826 9.25342 15.2783 9.5137 15.2783C9.65068 15.2783 9.7774 15.251 9.89384 15.1963C10.0103 15.1416 10.1096 15.0732 10.1918 14.9912L14.0137 11.1768C14.0959 11.0947 14.1644 10.9956 14.2192 10.8794C14.274 10.7632 14.3014 10.6367 14.3014 10.5C14.3014 10.3633 14.274 10.2368 14.2192 10.1206C14.1644 10.0044 14.0959 9.90527 14.0137 9.82324L10.1918 6.00879C10.1096 5.92676 10.0103 5.8584 9.89384 5.80371C9.7774 5.74902 9.65068 5.72168 9.5137 5.72168C9.25342 5.72168 9.0274 5.81738 8.83562 6.00879C8.64384 6.2002 8.54794 6.42578 8.54794 6.68555V9.53613H0C0.123288 8.19629 0.486301 6.94531 1.08904 5.7832C1.67808 4.62109 2.44178 3.61279 3.38014 2.7583C4.31849 1.90381 5.39041 1.23047 6.59589 0.738281C7.81507 0.246094 9.10959 0 10.4795 0C11.9315 0 13.2945 0.273439 14.5685 0.820312C15.8425 1.38086 16.9555 2.13623 17.9075 3.08643C18.8596 4.03662 19.6096 5.14746 20.1575 6.41895C20.7192 7.69043 21 9.05078 21 10.5C21 11.9492 20.7192 13.3096 20.1575 14.5811C19.6096 15.8662 18.8596 16.9839 17.9075 17.9341C16.9555 18.8843 15.8425 19.6328 14.5685 20.1797C13.2945 20.7266 11.9315 21 10.4795 21Z"
+                                                fill="#170006"></path>
+                                        </svg></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 mt-30 order-1 order-lg-2">
+                            <div class="cta-image text-center">
+                                <img src="assets/img/event/Picnic/Director.png" style="border-radius: 10px;"
+                                    alt="Director">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 mt-30 order-2 order-lg-1">
+                            <div class="section-title section-title--md">
+                                <span class="sub-title">Our Educationist cum Adviser</span>
+                                <h2 class="title mb-20">Dr. Ajaya Kumar Behera </h2>
+                                <!-- <i
+                                    style="padding-left:10px ; color: #ecb726;;">MA(Eng
+                                    ), M.ED, MBA</i><br> -->
+                                <p style="text-align: justify;">Welcome to URJA ACADEMY – a place where education is
+                                    not just delivered but experienced as a journey of transformation.
+                                    <br>As the Adviser
+                                    of URJA ACADEMY, I am deeply proud of the role our institution plays in shaping the
+                                    future of aspiring educators, competitive exam candidates, and global learners.
+                                    Education today is no longer about memorising facts — it is about building skills,
+                                    confidence, and purpose that allow individuals to thrive in a rapidly changing
+                                    world.
+                                    <br>At URJA ACADEMY, we are committed to:
+                                    <br>• Guiding B.Ed. aspirants with
+                                    accurate counselling so they choose the right pathway into teaching.
+                                    <br>• Providing
+                                    comprehensive coaching for OSSTET, CTET, OTET, and other competitive examinations
+                                    that open doors to rewarding careers.
+                                    <br>• Connecting students with top universities in
+                                    India and abroad, enabling them to pursue degrees and professional courses that
+                                    match their dreams.
+                                    <br>What sets us apart is not just the quality of our teaching but
+                                    the care and mentorship we offer. We believe every learner is unique, and we work
+                                    tirelessly to provide personalised guidance, curated resources, and future-ready
+                                    training that prepare them for success in real-world scenarios.
+                                    <br>As you explore our
+                                    website, I encourage you to see URJA ACADEMY not only as an institution, but as a
+                                    partner in your growth journey. Whether you are preparing for a competitive exam,
+                                    seeking admission guidance, or looking to upgrade your skills, we are here to walk
+                                    beside you, every step of the way.
+                                    <br>Let us learn, grow, and lead together — because
+                                    at URJA ACADEMY, your success is our mission, and your future is our vision.
+                                    <br>
+                                    <br>
+                                    I wish you all a very bright future.
+                                </p>
+                            </div>
+                            <div class="admission-btn mt-40">
+                                <a class="thm-btn" href="contact.html">talk to an me
+                                    <span class="icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.4795 21C9.10959 21 7.81507 20.7539 6.59589 20.2617C5.37671 19.7695 4.30137 19.0962 3.36986 18.2417C2.43836 17.3872 1.67808 16.3857 1.08904 15.2373C0.486301 14.0752 0.123288 12.8311 0 11.5049V11.4639H8.56849V14.3145C8.56849 14.5742 8.66096 14.7998 8.84589 14.9912C9.03082 15.1826 9.25342 15.2783 9.5137 15.2783C9.65068 15.2783 9.7774 15.251 9.89384 15.1963C10.0103 15.1416 10.1096 15.0732 10.1918 14.9912L14.0137 11.1768C14.0959 11.0947 14.1644 10.9956 14.2192 10.8794C14.274 10.7632 14.3014 10.6367 14.3014 10.5C14.3014 10.3633 14.274 10.2368 14.2192 10.1206C14.1644 10.0044 14.0959 9.90527 14.0137 9.82324L10.1918 6.00879C10.1096 5.92676 10.0103 5.8584 9.89384 5.80371C9.7774 5.74902 9.65068 5.72168 9.5137 5.72168C9.25342 5.72168 9.0274 5.81738 8.83562 6.00879C8.64384 6.2002 8.54794 6.42578 8.54794 6.68555V9.53613H0C0.123288 8.19629 0.486301 6.94531 1.08904 5.7832C1.67808 4.62109 2.44178 3.61279 3.38014 2.7583C4.31849 1.90381 5.39041 1.23047 6.59589 0.738281C7.81507 0.246094 9.10959 0 10.4795 0C11.9315 0 13.2945 0.273439 14.5685 0.820312C15.8425 1.38086 16.9555 2.13623 17.9075 3.08643C18.8596 4.03662 19.6096 5.14746 20.1575 6.41895C20.7192 7.69043 21 9.05078 21 10.5C21 11.9492 20.7192 13.3096 20.1575 14.5811C19.6096 15.8662 18.8596 16.9839 17.9075 17.9341C16.9555 18.8843 15.8425 19.6328 14.5685 20.1797C13.2945 20.7266 11.9315 21 10.4795 21Z"
+                                                fill="#170006"></path>
+                                        </svg></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 mt-30 order-1 order-lg-2">
+                            <div class="cta-image text-center">
+                                <img src="assets/img/team/adviser.png" style="border-radius: 10px;" alt="Director">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <!-- main area end  -->
+
+        <!-- footer strt -->
+        <script src="footer.js">  </script>
+        <!-- footer end -->
+
+    </div>
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="poster.js"></script> -->
+
+</body>
+
+</html>

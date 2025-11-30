@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>URJA ACADEMY - BERHAMPUR </title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/recoleta-font.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Poster Overlay Styles -->
+    <style>
+        /* Small image button fixed on the left */
+        .small-image {
+            position: fixed;
+            bottom: 100px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+
+        /* Fullscreen overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s;
+            z-index: 9999;
+        }
+
+        /* Show overlay when active */
+        .overlay.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Full image */
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-btn:hover {
+            background: #f0f0f0;
+        }
+    </style>
+    <style>
+        #typewriter-text {
+            display: inline-block;
+            white-space: pre-wrap;
+            overflow: hidden;
+            animation: fadeIn 1s ease;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Optional: smooth fade-in effect for each character */
+        @keyframes fadeIn {
+            from {
+                opacity: 0.6;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- backtotop - start -->
+    <div class="xb-backtotop">
+        <a href="#" class="scroll">
+            <i class="far fa-arrow-up"></i>
+        </a>
+    </div>
+    <!-- backtotop - end -->
+
+    <!-- Preloader - Start -->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/preloader.png" alt="preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader - End -->
+
+    <div class="body_wrap">
+
+        <script src="header.js"></script>
+
+        <!-- main area start  -->
+        <main>
+            <!-- hero section start  -->
+            <section class="hero o-hidden pos-rel">
+                <div class="bg_img" data-background="assets/img/bg/hero_bg.png">
+                    <div class="container">
+                        <div class="hero__content-wrap text-center pt-55">
+                            <div class="section-title clr-white">
+                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".6s">
+                                    Welcome to University
+                                </span>
+
+                                <h1 class="title wow fadeInUp" data-wow-delay="150ms" data-wow-duration=".6s">
+                                    <span id="typewriter-text"></span>
+                                </h1>
+                            </div>
+
+                            <div class="xb-hero-img">
+                                <img src="assets/img/hero/hero_img01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero section end  -->
+
+            <!-- hero btn start -->
+            <div class="hero-btns">
+                <div class="btns ul_li_center">
+                    <a class="thm-btn thm-btn--stroke-white sec-btn"
+                        href="https://urrja-accademi.vercel.app/notes">explore Notes
+                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 4.84999V16.74C22 17.71 21.21 18.6 20.24 18.72L19.93 18.76C18.29 18.98 15.98 19.66 14.12 20.44C13.47 20.71 12.75 20.22 12.75 19.51V5.59999C12.75 5.22999 12.96 4.88999 13.29 4.70999C15.12 3.71999 17.89 2.83999 19.77 2.67999H19.83C21.03 2.67999 22 3.64999 22 4.84999Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.71 4.70999C8.87999 3.71999 6.10999 2.83999 4.22999 2.67999H4.15999C2.95999 2.67999 1.98999 3.64999 1.98999 4.84999V16.74C1.98999 17.71 2.77999 18.6 3.74999 18.72L4.05999 18.76C5.69999 18.98 8.00999 19.66 9.86999 20.44C10.52 20.71 11.24 20.22 11.24 19.51V5.59999C11.24 5.21999 11.04 4.88999 10.71 4.70999ZM4.99999 7.73999H7.24999C7.65999 7.73999 7.99999 8.07999 7.99999 8.48999C7.99999 8.90999 7.65999 9.23999 7.24999 9.23999H4.99999C4.58999 9.23999 4.24999 8.90999 4.24999 8.48999C4.24999 8.07999 4.58999 7.73999 4.99999 7.73999ZM7.99999 12.24H4.99999C4.58999 12.24 4.24999 11.91 4.24999 11.49C4.24999 11.08 4.58999 10.74 4.99999 10.74H7.99999C8.40999 10.74 8.74999 11.08 8.74999 11.49C8.74999 11.91 8.40999 12.24 7.99999 12.24Z"
+                                    fill="white" />
+                            </svg></span>
+                    </a>
+                    <a class="thm-btn thm-btn--stroke-white sec-btn"
+                        href="https://urrja-accademi.vercel.app/admission">Admission
+                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.25 19.492V20.75C16.25 21.164 15.914 21.5 15.5 21.5C15.086 21.5 14.75 21.164 14.75 20.75V19.5H16C16.084 19.5 16.167 19.497 16.25 19.492Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.75 19.5H8C5.929 19.5 4.25 17.821 4.25 15.75V12.668L9.964 15.825C11.202 16.509 12.798 16.509 14.036 15.825L14.75 15.431V19.5ZM16.25 14.602L19.75 12.668V15.75C19.75 17.737 18.205 19.363 16.25 19.492V14.602Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.75 14.288L13.552 14.95C12.608 15.472 11.392 15.472 10.448 14.95L2.134 10.356C1.568 10.043 1.25 9.49499 1.25 8.92199C1.25 8.34799 1.568 7.79999 2.134 7.48799L10.448 2.89299C11.392 2.37199 12.608 2.37199 13.552 2.89299L21.866 7.48799C22.432 7.79999 22.75 8.34799 22.75 8.92199C22.75 9.49499 22.432 10.043 21.866 10.356L16.25 13.459V12.75C16.25 12.551 16.171 12.36 16.03 12.22L12.53 8.71999C12.238 8.42699 11.762 8.42699 11.47 8.71999C11.177 9.01199 11.177 9.48799 11.47 9.77999L14.75 13.061V14.288Z"
+                                    fill="white" />
+                            </svg></span>
+                    </a>
+                    <a class="thm-btn thm-btn--stroke-white sec-btn" href="contact.html">Ask a question
+                        <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.0364 2.63798C11.6702 1.79536 10.0512 1.33203 8.37891 1.33203C3.82654 1.33203 0 4.72368 0 9.06641C0 10.589 0.473 12.0486 1.37148 13.3092L0.116359 17.2497C-0.0162422 17.6659 0.295539 18.0898 0.730598 18.0898C0.83007 18.0898 0.930188 18.0669 1.02257 18.0198L4.83957 16.0791C4.99413 16.1456 5.15062 16.2076 5.3087 16.265C4.42496 14.8857 3.95312 13.3023 3.95312 11.6445C3.95312 6.70755 8.10726 2.91208 13.0364 2.63798Z"
+                                    fill="white" />
+                                <path
+                                    d="M20.6285 15.8873C21.527 14.6267 22 13.1671 22 11.6445C22 7.30022 18.1718 3.91016 13.6211 3.91016C9.06873 3.91016 5.24219 7.30181 5.24219 11.6445C5.24219 15.9888 9.07036 19.3789 13.6211 19.3789C14.8421 19.3789 16.0588 19.1301 17.1602 18.6571L20.9774 20.598C21.2091 20.7158 21.4889 20.6829 21.6869 20.5146C21.885 20.3463 21.9626 20.0755 21.8837 19.8278L20.6285 15.8873ZM11 12.2891C10.644 12.2891 10.3555 12.0005 10.3555 11.6445C10.3555 11.2886 10.644 11 11 11C11.356 11 11.6445 11.2886 11.6445 11.6445C11.6445 12.0005 11.356 12.2891 11 12.2891ZM13.5781 12.2891C13.2222 12.2891 12.9336 12.0005 12.9336 11.6445C12.9336 11.2886 13.2222 11 13.5781 11C13.9341 11 14.2227 11.2886 14.2227 11.6445C14.2227 12.0005 13.9341 12.2891 13.5781 12.2891ZM16.1562 12.2891C15.8003 12.2891 15.5117 12.0005 15.5117 11.6445C15.5117 11.2886 15.8003 11 16.1562 11C16.5122 11 16.8008 11.2886 16.8008 11.6445C16.8008 12.0005 16.5122 12.2891 16.1562 12.2891Z"
+                                    fill="white" />
+                            </svg></span>
+                    </a>
+                </div>
+            </div>
+            <!-- hero btn end -->
+
+
+            <section class="about hs-about pt-70 pb-70 pos-rel">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-6">
+                            <div class="hs-about_left mt-20">
+                                <div class="about-img wow skewIn" style="visibility: visible;">
+                                    <img src="assets/img/event/urjja_event/98.jpeg" style="border-radius: 5px;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hs-about-right ml-70 mt-20 wow fadeInLeft" data-wow-delay="200ms"
+                                data-wow-duration=".6s"
+                                style="visibility: visible; animation-duration: 0.6s; animation-delay: 200ms; animation-name: fadeInLeft;">
+                                <div class="section-title mb-20">
+                                    <span class="sub-title">About Us</span>
+                                    <h1 class="title">Urja Academy – The Power of Possibility</h1>
+
+                                    <p class="hs-content mt-25">
+                                        Founded in 2015, URJA ACADEMY provides flexible, skill-based online programs
+                                        that equip learners with
+                                        practical, in-demand skills for a competitive future.
+                                    </p>
+
+
+                                </div>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li>Modern, skill-based online learning.</li>
+                                    <li>Flexible and affordable training programs.</li>
+                                    <li>Trusted by thousands of learners since 2015.</li>
+                                </ul>
+                                <div class="xb-btn mt-35">
+                                    <a class="thm-btn thm-btn--stroke-black hover-2" href="contact.html">
+                                        Get In Touch
+                                        <span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 4.84993V16.7399C22 17.7099 21.21 18.5999 20.24 18.7199L19.93 18.7599C18.29 18.9799 15.98 19.6599 14.12 20.4399C13.47 20.7099 12.75 20.2199 12.75 19.5099V5.59993C12.75 5.22993 12.96 4.88993 13.29 4.70993C15.12 3.71993 17.89 2.83993 19.77 2.67993H19.83C21.03 2.67993 22 3.64993 22 4.84993Z"
+                                                    fill="#170006"></path>
+                                                <path
+                                                    d="M10.71 4.70993C8.87999 3.71993 6.10999 2.83993 4.22999 2.67993H4.15999C2.95999 2.67993 1.98999 3.64993 1.98999 4.84993V16.7399C1.98999 17.7099 2.77999 18.5999 3.74999 18.7199L4.05999 18.7599C5.69999 18.9799 8.00999 19.6599 9.86999 20.4399C10.52 20.7099 11.24 20.2199 11.24 19.5099V5.59993C11.24 5.21993 11.04 4.88993 10.71 4.70993ZM4.99999 7.73993H7.24999C7.65999 7.73993 7.99999 8.07993 7.99999 8.48993C7.99999 8.90993 7.65999 9.23993 7.24999 9.23993H4.99999C4.58999 9.23993 4.24999 8.90993 4.24999 8.48993C4.24999 8.07993 4.58999 7.73993 4.99999 7.73993ZM7.99999 12.2399H4.99999C4.58999 12.2399 4.24999 11.9099 4.24999 11.4899C4.24999 11.0799 4.58999 10.7399 4.99999 10.7399H7.99999C8.40999 10.7399 8.74999 11.0799 8.74999 11.4899C8.74999 11.9099 8.40999 12.2399 7.99999 12.2399Z"
+                                                    fill="#170006"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!--about-->
+            <section class="mission-vission z-1 pos-rel pt-70 pb-130">
+                <div class="mission-vission-bg" data-background="assets/img/bg/vm_bg.jpg"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center mb-65">
+                                <h2 class="title mb-15">our mission and vision</h2>
+                                <p style="text-align: center;">Mission is to empower individuals through high-quality
+                                    institution — we are a launchpad for dreams.
+                                    Our vision is to become India’s most trusted education and counselling hub,
+                                    recognised globally for shaping futures with care, integrity, and excellence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-none-30">
+                        <div class="col-lg-6 mt-30">
+                            <div class="mission-vission-item">
+                                <h3 class="xb-item--title">Our Mission</h3>
+                                <p class="xb-item--content">At URJA ACADEMY, our mission is to be more than an
+                                    institution — we are a launchpad for dreams.
+                                    We exist to empower students, educators, and professionals by providing:</p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, you can:</h4>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Expert B.Ed.
+                                        counselling, guiding aspiring teachers toward the right career path.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Competitive exam
+                                        preparation and personalised coaching for OSSTET, CTET, OTET, and other key
+                                        examinations.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>University enrolment
+                                        support, connecting learners to leading colleges and universities in India and
+                                        abroad.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Our goal is to create a
+                                        complete ecosystem where learners are guided, trained, and supported from their
+                                        first step in education to their ultimate career destination.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Develop critical
+                                        thinking and leadership skills.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Learn in an inclusive
+                                        online environment.</li> -->
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <div class="shape shape--1">
+                                        <img src="assets/img/shape/vm_shape1.png" alt="">
+                                    </div>
+                                    <div class="shape shape--2">
+                                        <img src="assets/img/shape/vm_shape2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="mission-vission-item">
+                                <h3 class="xb-item--title">Our Vision</h3>
+                                <p class="xb-item--content">Our vision is to become India’s most trusted education and
+                                    counselling hub, recognised globally for shaping futures with care, integrity, and
+                                    excellence.
+                                </p>
+                                <h4 class="xb-item--subtitle">With URJA ACADEMY, aspire to:</h4>
+                                <ul class="xb-item--list list-unstyled">
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Be the go-to
+                                        destination for B.Ed. aspirants and competitive exam candidates seeking quality
+                                        coaching and guidance.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Build a network of top
+                                        Indian and international universities to open global doors for our students.
+                                    </li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Create a platform where
+                                        personalised mentorship and future-focused training go hand-in-hand.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Inspire learners to
+                                        become leaders, innovators, and contributors in society, equipped with both
+                                        knowledge and character.</li>
+                                    <!-- <li><span><img src="assets/img/icon/check.svg" alt=""></span>Collaborate with
+                                        industry experts and mentors.</li>
+                                    <li><span><img src="assets/img/icon/check.svg" alt=""></span>Adapt to the changing
+                                        professional landscape.</li> -->
+                                    <br>
+                                </ul>
+                                <div class="xb-item--shape">
+                                    <div class="shape shape--1">
+                                        <img src="assets/img/shape/vm_shape1.png" alt="">
+                                    </div>
+                                    <div class="shape shape--2">
+                                        <img src="assets/img/shape/vm_shape2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--end about-->
+
+            <!-- core values start -->
+            <section class="core-values-section section_space  pb-70 " id="Our-Core-Values"
+                style="margin-top: -88px; padding-top: 70px; padding-bottom: 70px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="section-title text-center mb-50">
+                                <!-- <h2 class="mb-30">Our Core Values</h2> -->
+                                <h2 class="title mb-15">Our Core Values</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Value 1 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h3>Student-Centred Approach</h3>
+                                <p>Every decision we make is guided by what benefits the learner — their success is our
+                                    success.</p>
+                            </div>
+                        </div>
+                        <!-- Value 2 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3>Educational Excellence</h3>
+                                <p>We hold ourselves to high standards of teaching, mentorship, and counselling,
+                                    ensuring each learner receives accurate guidance and the best preparation.</p>
+                            </div>
+                        </div>
+                        <!-- Value 3 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+            background-size: cover;
+            background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h3>Global Mindset</h3>
+                                <p>We help students think beyond borders, preparing them for opportunities not just
+                                    locally, but in India's best universities and world-class institutions abroad.</p>
+                            </div>
+                        </div>
+                        <!-- Value 4 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>Integrity & Transparency</h3>
+                                <p>We provide honest guidance, clear pathways, and ethical counselling — because trust
+                                    is the foundation of education.</p>
+                            </div>
+                        </div>
+                        <!-- Value 5 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Holistic Growth</h3>
+                                <p>We focus on academics, critical thinking, and personal development — shaping learners
+                                    into confident, well-rounded individuals.</p>
+                            </div>
+                        </div>
+                        <!-- Value 6 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="core-value-card h-100" style="background-image: url('assets/img/shape/vm_shape1.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;">
+                                <div class="value-icon mb-3">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h3>Lifelong Support</h3>
+                                <p>Our relationship doesn't end at admission or examination. We continue to guide
+                                    learners with mentorship, career advice, and global opportunities.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <style>
+                    .core-value-card {
+                        background: #fff;
+                        padding: 30px;
+                        border-radius: 15px;
+                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                        text-align: center;
+                    }
+
+                    .core-value-card:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .value-icon {
+                        width: 70px;
+                        height: 70px;
+                        background: var(--theme-color);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                    }
+
+                    .value-icon i {
+                        font-size: 30px;
+                        color: #fff;
+                    }
+
+                    .core-value-card h3 {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        color: var(--theme-color);
+                    }
+
+                    .core-value-card p {
+                        font-size: 15px;
+                        line-height: 1.6;
+                        color: #666;
+                        margin: 0;
+                    }
+                </style>
+            </section>
+            <!-- core values end -->
+            <!-- department section start  -->
+            <section class="department pt-30 pb-140 pos-rel">
+                <section class="team pt-30 pb-140" data-bg-color="#F1F1E9">
+                    <div class="container">
+                        <div class="section-title text-center mb-60">
+                            <span class="sub-title">Our Honorable Teacher</span>
+                            <h2 class="title">Our Expert Instructor</h2>
+                        </div>
+
+                        <div class="row mt-none-30">
+                            <!-- Instructor Card Start -->
+                            <div class="col-lg-4 col-md-6 mt-30">
+                                <div class="team-item">
+                                    <div class="xb-item--img pos-rel">
+                                        <a href="assets/img/team/team_01.web" data-lightbox="team-gallery">
+                                            <img src="assets/img/team/team_01.webp" alt="Instructor Image">
+                                        </a>
+                                    </div>
+                                    <div class="team-info text-center mt-20">
+                                        <h4 class="name">IEEE WIECON-ECE</h4>
+                                        <p class="designation"></p>
+                                    </div>
+                                    <ul class="xb-item--meta ul_li">
+                                        <li>
+                                            <span>
+                                                <!-- SVG icon -->
+                                                <svg width="140" height="23" viewBox="0 0 23 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <!-- your paths here -->
+                                                </svg>
+                                            </span>2024
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Instructor Card End -->
+                            <div class="col-lg-4 col-md-6 mt-30">
+                                <div class="team-item">
+                                    <div class="xb-item--img pos-rel">
+                                        <a href="assets/img/team/team_02.webp" data-lightbox="team-gallery">
+                                            <img src="assets/img/team/team_02.webp" alt="Instructor Image">
+                                        </a>
+                                    </div>
+                                    <div class="team-info text-center mt-20">
+                                        <h4 class="name">Energy Swaraj Foundation</h4>
+                                        <p class="designation"></p>
+                                    </div>
+                                    <ul class="xb-item--meta ul_li">
+                                        <li>
+                                            <span>
+                                                <!-- SVG icon -->
+                                                <svg width="144" height="23" viewBox="0 0 23 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <!-- your paths here -->
+                                                </svg>
+                                            </span>
+                                            2024
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <!-- <div class="col-lg-4 col-md-6 mt-30">
+                            <div class="team-item">
+                                <div class="xb-item--img pos-rel">
+                                    <a href="assets/img/team/team_03.webp" data-lightbox="team-gallery">
+                                        <img src="assets/img/team/team_03.webp" alt="Instructor Image">
+                                    </a>
+                                </div>
+                                <div class="team-info text-center mt-20">
+                                    <h4 class="name">Instructor Name</h4>
+                                    <p class="designation">Subject / Role</p>
+                                </div>
+                                <ul class="xb-item--meta ul_li">
+                                    <li>
+                                        <span>
+
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                               
+                                            </svg>
+                                        </span>
+                                        1 Courses
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                            <!--3-->
+                            <div class="col-lg-4 col-md-6 mt-30">
+                                <div class="team-item">
+                                    <div class="xb-item--img pos-rel">
+                                        <a href="assets/img/team/team_04.webp" data-lightbox="team-gallery">
+                                            <img src="assets/img/team/team_04.webp" alt="Instructor Image">
+                                        </a>
+                                    </div>
+                                    <div class="team-info text-center mt-20">
+                                        <h4 class="name">Allied Boston</h4>
+                                        <p class="designation"></p>
+                                    </div>
+                                    <ul class="xb-item--meta ul_li">
+                                        <li>
+                                            <span>
+                                                <!-- SVG icon -->
+                                                <svg width="140" height="23" viewBox="0 0 23 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <!-- your paths here -->
+                                                </svg>
+                                            </span>
+                                            2025
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Repeat for instructors 3, 4, 5, 6 with appropriate image paths -->
+
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </section>
+            <!-- department section end  -->
+
+            <!-- fanfact section start  -->
+            <section class="fanfact pos-rel">
+                <div class="container">
+                    <div class="fanfact-wrapper">
+                        <div class="fanfact-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="xb-fanfact__wrapper pos-rel">
+                                        <div class="xb-item--img">
+                                            <img src="assets/img/feature/feature-img01.png" alt="">
+                                        </div>
+                                        <h2 class="xb-item--title">our teaching quality is best <br> from other
+                                            Academy.</h2>
+                                        <div class="xb-item--holder">
+                                            <h3 class="xb-item--number">15+</h3>
+                                            <h2 class="xb-item--text">Institutes in University</h2>
+                                            <p class="xb-item--content" style="text-align: justify;">URJA ACADEMY
+                                                ensures students get access to
+                                                academic support and collaborative learning environments. We aim to
+                                                empower educators and aspiring teachers with the tools they need to
+                                                excel, through both traditional resources and modern digital platforms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="xb-fanfact__wrapper pos-rel">
+                                        <div class="xb-item--img">
+                                            <img src="assets/img/feature/feature-img03.png" alt="">
+                                        </div>
+                                        <h2 class="xb-item--title">our teaching quality is best <br> rom other
+                                            Academy.</h2>
+                                        <div class="xb-item--holder">
+                                            <h3 class="xb-item--number">10+</h3>
+                                            <h2 class="xb-item--text">Standardized Education</h2>
+                                            <p class="xb-item--content" style="text-align: justify;">URJA ACADEMY offer
+                                                short-term training
+                                                courses, certification programs, and a vast selection of exam-oriented
+                                                study materials. Our resources are trusted by thousands of students and
+                                                have helped many achieve success in competitive exams like OSSTET, CTET,
+                                                OTET, and more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="xb-fanfact__wrapper pos-rel">
+                                        <div class="xb-item--img">
+                                            <img src="assets/img/feature/feature-img01.png" alt="">
+                                        </div>
+                                        <h2 class="xb-item--title">our teaching quality is best <br>rom other
+                                            academy.</h2>
+                                        <div class="xb-item--holder">
+                                            <h3 class="xb-item--number">15+</h3>
+                                            <h2 class="xb-item--text">Institutes in University</h2>
+                                            <p class="xb-item--content" style="text-align: justify;">URJA ACADEMY is a
+                                                well-known institute that
+                                                offers quality online courses Specialized resources such as OSSTET and
+                                                CTET old question papers with answers and upcoming English & Odia notes
+                                                for OSSTET, OTET, and CTET make learning comprehensive and exam-focused.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination ul_li_center"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- fanfact section end  -->
+
+            <!-- program section start  -->
+            <!-- program section end  -->
+
+
+            <!-- campus section start  -->
+            <section class="campus pos-rel bg_img z-1 pt-70 pb-70 mt-20" data-background="assets/img/bg/campus-bg.jpg">
+                <div class="section-title mb-60 text-center">
+                    <span class="sub-title">Our Campus Life</span>
+                    <h1 class="title">Our Campus Life</h1>
+                </div>
+                <div class="campus-slider mr-set">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/Picnic/7.jpeg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/Picnic/25.jpg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/Picnic/27.jpg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/urjja_event/98.jpeg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/urjja_event/210.jpeg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="xb-campus__wrapper pos-rel">
+                                <div class="xb-item--img pos-rel">
+                                    <img src="assets/img/event/urjja_event/98.jpeg" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Cultural Experiences</h3>
+                                    <div class="xb-btn_thm ul_li">
+                                        <a class="thm-btn btn-yellow" href="gallery.html">read more
+                                            <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination ul_li_center"></div>
+                </div>
+            </section>
+            <!-- campus section end  -->
+            <!-- testimonial section start  -->
+            <section class="testimonial pt-60  pos-rel">
+                <div class="container">
+                    <div class="row align-items-center mt-none-30" style="padding-bottom: 10px;">
+                        <div class="col-lg-6 mt-30">
+                            <div class="xb-testimonial-left pos-rel wow fadeInLeft" data-wow-delay="0ms"
+                                data-wow-duration=".6s">
+                                <div class="testimonial-slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/testimonial/tes-img.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/testimonial/tes-img04.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/testimonial/tes-img.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/team/aranbinda.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/team/sanjay.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/team/Sidhida.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/testimonial/tes-img.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/testimonial/tes-img04.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="tes-img">
+                                                <img src="assets/img/team/ajita.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slider-nav swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/testimonial/tes-img02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/testimonial/tes-img03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/testimonial/tes-img02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/team/aranbinda.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/team/sanjay.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/team/Sidhida.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/testimonial/tes-img02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/testimonial/tes-img03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-nav-item">
+                                                <img src="assets/img/team/ajita.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-carousel">
+                                    <div class="xb-swiper-arrow xb-swiper-arrow-next"><i class="far fa-angle-down"></i>
+                                    </div>
+                                    <div class="xb-swiper-arrow xb-swiper-arrow-prev"><i class="far fa-angle-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-30">
+                            <div class="xb-testimonial-right wow fadeInRight" data-wow-delay="100ms"
+                                data-wow-duration=".6s">
+                                <div class="section-title mb-70">
+                                    <span class="sub-title">Our Student Stories</span>
+                                    <h1 class="title">Happy Student Feedback</h1>
+                                </div>
+                                <div class="testimonial-slider swiper-container">
+                                    <!-- Navigation buttons -->
+                                    <!-- <div class="swiper-button-next"></div> -->
+                                    <!-- <div class="swiper-button-prev"></div> -->
+                                    <!-- Pagination dots -->
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Urja Academy
+                                                    is not just an institute rather its a wonderful organisation which
+                                                    is providing excellent courses and inbuilding academics and
+                                                    positions. Santosh Sir is irreplaceable and vibrant in each and
+                                                    every field. All the staffs and members working are extremely
+                                                    supportive and cooperative. Im very much fortunate and blessed to be
+                                                    a student from such an organisation."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Moitri Acharya </span>
+                                                <span class="xb-item--desig">Batch: 2020-22</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I feel truly
+                                                    grateful and privileged to be a part of this institution. Our
+                                                    college has provided me not just academic excellence, but also
+                                                    opportunities for holistic growth and personal development. With
+                                                    inspiring faculty, a vibrant campus, and a nurturing environment, it
+                                                    continues to shape students into confident individuals ready to face
+                                                    the future. I am proud of my college and wish it continuous progress
+                                                    and greater achievements."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">B.Bhagyashree Reddy</span>
+                                                <span class="xb-item--desig">Batch: 2024-26</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"ଉର୍ଜା
+                                                    ଏକାଡେମୀରେ ମୋର B.Ed ଯାତ୍ରା ମାତ୍ର ଏକ ଶିକ୍ଷାନୁଷ୍ଠାନର ପାଠାଶାଳା ନୁହେଁ,
+                                                    ବରଂ ଏକ ଆତ୍ମଜ୍ଞାନର ସୁନ୍ଦର ପରିକ୍ରମା।
+                                                    ଏଠାରେ ଶିକ୍ଷକମାନଙ୍କର ଅସୀମ ସହନଶୀଳତା, ଜ୍ଞାନର ଗଭୀରତା ଓ ପ୍ରତିଟି ପାଠରେ
+                                                    ଥିବା ସୃଜନଶୀଳତା ମୋତେ ସଦା ପ୍ରେରିତ କରିଛି।
+                                                    ଶିକ୍ଷାରେ ସମ୍ବେଦନା, ଶିଷ୍ଟାଚାରରେ ସାହିତ୍ୟ ଓ ଆଚରଣରେ ମାନବତା—ଏହି ତିନୋଟି
+                                                    ଦିଗକୁ ସଫଳତାର ସହିତ ସଂସ୍କାର କରାଇଛି ଏହି ମାଟି।
+
+                                                    ଉର୍ଜା ଏକାଡେମୀ ମୋ ପାଇଁ କେବଳ ଶିକ୍ଷାକେନ୍ଦ୍ର ନୁହେଁ;
+                                                    ଏହା ମୋର ଜୀବନରେ 'ପଥଦର୍ଶୀ ପ୍ରଦୀପ'।
+                                                    ଆଜି ମୁଁ ଯେତେବେଳେ ମୋର ଶିକ୍ଷାକୁ ସ୍ମରଣ କରିବି, ସେତେବେଳେ ଏହି ଏକାଡେମୀର ନାମ
+                                                    ମୋର ହୃଦୟରେ ସୁନ୍ଦର ସ୍ମୃତିରେ ଉଜ୍ଜ୍ୱଳ ହେଇ ରହିବ।"</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">ଚନ୍ଦନ କୁମାର ସାହୁ</span>
+                                                <span class="xb-item--desig">B.Ed</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I recently
+                                                    completed my B.Ed program at this esteemed institution URJA ACADEMY,
+                                                    and I must say that it was a truly enriching experience. The
+                                                    expertise and dedication of Santosh sir played a significant role in
+                                                    shaping my teaching skills and knowledge.
+                                                    The program's curriculum and practical training helped me develop a
+                                                    deep understanding of educational theories and their application in
+                                                    real-world classrooms. I'm grateful for the opportunities provided
+                                                    to me,
+                                                    I appreciate the institution's commitment to fostering a supportive
+                                                    learning environment and would highly recommend it to prospective
+                                                    students.
+                                                    Thank you sir for your role in shaping my teaching career."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Arabinda</span>
+                                                <span class="xb-item--desig">Batch: 2020-22</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"It is my
+                                                    honour to express my heartfelt gratitude and reflect upon my journey
+                                                    with URJA Academy. I vividly remember the day I first met Santosh
+                                                    Sir and made the decision to embark on my B.Ed. journey for the
+                                                    following two years.
+
+                                                    Now, six years later, I can confidently say that the unwavering
+                                                    support, encouraging words, and ever-welcoming smile of Santosh Sir
+                                                    have played a significant role in shaping my professional path and
+                                                    personal growth.
+
+                                                    The two-year B.Ed. programme was an enriching and unforgettable
+                                                    experience, marked by consistent guidance and assistance at every
+                                                    stage—from the moment of admission to the successful completion of
+                                                    the course.
+
+                                                    Today, I take great pride in being associated with URJA Academy.
+                                                    Santosh Sir and the entire team have been truly exceptional in their
+                                                    dedication and support towards every student.
+
+                                                    Thank you, Santosh Sir, for your invaluable mentorship and continued
+                                                    encouragement.
+                                                    "</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Sanjay Kumar Sahoo</span>
+                                                <span class="xb-item--desig">PGT in Economics</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I'm part of
+                                                    the 2023-2025 batch pursuing my B.Ed degree at URJA Academy, and I
+                                                    must say it was an excellent experience! The academy provided
+                                                    top-notch guidance and support throughout the course. The faculty
+                                                    were incredibly helpful and understanding, making the learning
+                                                    journey smooth and enjoyable. I'm grateful for the opportunity to
+                                                    study here and would highly recommend URJA Academy to anyone looking
+                                                    to pursue a B.Ed degree."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Sidhida panda</span>
+                                                <span class="xb-item--desig">Batch: 2023-25</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Hello
+                                                    everyone,
+                                                    I am an alumni of BEd (2020-2022) through Santosh sir. Urja academy
+                                                    helped me with my BEd, Santosh sir provided us both offline and
+                                                    online classes. The teachers who taught us were well experienced and
+                                                    have very good subject knowledge, those class notes helped me in my
+                                                    exam. During exams, Sir provided us guidance on how to appear in
+                                                    exams, During summer time he was waiting for us outside the exam
+                                                    centre with cold drinks. And the most important thing is although
+                                                    it's a coaching institution but thanks to sir we observe every
+                                                    occasion."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Dibyajyoti Pradhan</span>
+                                                <span class="xb-item--desig">Batch: 2020-22</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"Hello everyone
+                                                    I am Sonali Mahapatra from Berhampur. Once i was very tensed
+                                                    regarding the B.ed joining and i did not know which institute should
+                                                    i trust completely. Then once by the recommodation one of my close
+                                                    friend i got to know about Urja academy and about Santosh sir, The
+                                                    chief of this academy. After getting so many positive feedback i met
+                                                    up with Santosh sir, and i must say he is so humble having down to
+                                                    earth personality. He consoles me through his advice and eraise all
+                                                    my fear and overthinking regarding joining. Sir clears all my doubts
+                                                    positively before taking admission. Also this academy gives coaching
+                                                    to the students for getting the good score. Beside this, Urja
+                                                    academy train the students for clear the entrance test. Academy has
+                                                    its own arrangement also for taking the students to andhra safely
+                                                    and there also provides good food and room to stay during exams. All
+                                                    the faculties of academy are always ready to do help in our academic
+                                                    career. Not just only bookish knowledge Santosh sir teach us the
+                                                    moral and ethical value of our life.
+                                                    Thank you so much to all the members of Urja academy being a part of
+                                                    my life, I am so lucky to have a member of this academy."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Sonali Mahapatra</span>
+                                                <span class="xb-item--desig">B.Ed</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="xb-item--holder">
+                                                <div class="xb-item--quote mb-35">
+                                                    <img src="assets/img/icon/qua.png" alt="">
+                                                </div>
+                                                <p class="xb-item--content"
+                                                    style="text-align: justify;font-size: 19px;">"I would like
+                                                    to share my experience with Urja Academy, Berhampur, Odisha. It is a
+                                                    trusted counselling centre for the B.Ed course, approved by NCTE in
+                                                    various universities of Andhra Pradesh. The Director of Urja
+                                                    Academy, Santosh Reddy Sir, is a very cooperative and supportive
+                                                    person who guides students throughout the process. The academy also
+                                                    provides both online and offline classes during the academic
+                                                    sessions, which is very helpful for students in managing their
+                                                    studies effectively. I am satisfied with the services and guidance
+                                                    provided by Urja Academy."</p>
+                                            </div>
+                                            <div class="xb-item--author mt-60">
+                                                <span class="xb-item--name">Ajay Kumar Mallick </span>
+                                                <span class="xb-item--desig">Batch: 2020-24</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xb-tes-shape">
+                    <span class="shape shape--one"><img src="assets/img/shape/tes-shape.png" alt=""></span>
+                    <span class="shape shape--two"><img src="assets/img/shape/tes-shape02.png" alt=""></span>
+                </div>
+            </section>
+            <!-- testimonial section end  -->
+
+
+
+
+        </main>
+        <!-- main area end  -->
+
+        <!-- footer strt -->
+        <script src="footer.js"></script>
+        <!-- footer end -->
+
+    </div>
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <style>
+        .testimonial-slider {
+            position: relative;
+            padding-bottom: 50px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--theme-color);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            opacity: 1;
+        }
+
+        .swiper-pagination {
+            bottom: 0 !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: var(--theme-color);
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.testimonial-slider', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                grabCursor: true,
+                keyboard: {
+                    enabled: true,
+                },
+                speed: 600,
+                on: {
+                    init: function () {
+                        console.log('Swiper initialized successfully');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "URJA ACADEMY\nWhere Your Ambition Meets the Right Direction!";
+            const typewriterElement = document.getElementById("typewriter-text");
+            let index = 0;
+
+            function typeEffect() {
+                if (index < text.length) {
+                    const char = text.charAt(index);
+                    typewriterElement.innerHTML += (char === "\n") ? "<br>" : char;
+                    index++;
+                    setTimeout(typeEffect, 180);
+                } else {
+                    // Pause for a moment before restarting
+                    setTimeout(() => {
+                        typewriterElement.innerHTML = ""; // Clear the text
+                        index = 0; // Reset index
+                        typeEffect(); // Restart typing
+                    }, 1000); // 2 seconds pause before loop
+                }
+            }
+
+            typeEffect();
+        });
+    </script>
+
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="poster.js"></script>
+
+</body>
+
+</html>
