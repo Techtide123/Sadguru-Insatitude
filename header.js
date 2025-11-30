@@ -68,7 +68,8 @@ document.write(`
                 <div class="container">
                     <div class="header__wrap ul_li_between">
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.svg" alt="" style="width: 65px;"></a>
+                            <a href="index.html"><img src=" assets/img/sadguru-img/logo.jpg                                           
+" alt="" style="width: 65px;"></a>
                         </div>
                         <div class="main-menu__wrap ul_li navbar navbar-expand-lg">
                             <nav class="main-menu collapse navbar-collapse">
@@ -81,9 +82,6 @@ document.write(`
                                         <ul class="submenu">
                                             <li><a href="about.html#history">Our History</a></li>
                                             <li><a href="about.html#mission-vission">Mission & Vision</a></li>
-                                            <li><a href="about.html#Our-Core-Values">Our Core Values</a></li>
-                                            <li><a href="about.html#explore">Explore us</a></li>
-                                            <li><a href="about.html#whyus">Why Choose Us</a></li>
                                             <li><a href="about.html#director">Director’s Message</a></li>
                                         </ul>
                                     </li>
@@ -103,14 +101,8 @@ document.write(`
                                             <li><a href="academic.html#result">Results</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="https://admin.urjaacademy.org/admission">Admission</a></li>
-                                    <li><a href="https://admin.urjaacademy.org/notes">Notes</a></li>
-                                    <li class="menu-item-has-children">
+                                    <li>
                                         <a href="gallery.html">Gallery</a>
-                                        <ul class="submenu">
-                                            <li><a href="gallery.html#Campus">Campus</a></li>
-                                            <li><a href="gallery.html#Events">Events</a></li>
-                                        </ul>
                                     </li>
                                     <!-- <li class="menu-item-has-children">
                                         <a href="#!">Pages</a>
@@ -148,7 +140,8 @@ document.write(`
                                     <div class="xb-header-menu-scroll">
                                         <div class="xb-menu-close xb-hide-xl xb-close"></div>
                                         <div class="xb-logo-mobile xb-hide-xl">
-                                            <a href="index.html" rel="home"><img src="assets/img/logo/logo.svg"
+                                            <a href="index.html" rel="home"><img src=" assets/img/sadguru-img/logo.jpg                                           
+"
                                                     alt=""></a>
                                         </div>
 
