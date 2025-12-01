@@ -83,27 +83,30 @@ Main Road In front Of Sidhidatta Hospital, Berhampur ,Ganjam,Odisha,Pin-760004. 
                                         <ul class="submenu">
                                             <li><a href="about.html#history">Our History</a></li>
                                             <li><a href="about.html#mission-vission">Mission & Vision</a></li>
-                                            <li><a href="about.html#director">Director’s Message</a></li>
+                                           <!-- <li><a href="about.html#director">Director’s Message</a></li> -->
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="academic.html">Academics</a>
                                         <ul class="submenu">
-                                            <li><a href="academic.html#courses">Courses</a></li>
-                                            <li><a href="academic.html#affiliation">Affiliation</a></li>
+                                           <!-- <li><a href="academic.html#courses">Courses</a></li>
+                                            <li><a href="academic.html#affiliation">Affiliation</a></li>-->
                                             <li><a href="academic.html#teams">Faculty</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children">
+                                    <!-- <li class="menu-item-has-children">
                                         <a href="academic.html">Examination</a>
                                         <ul class="submenu">
                                             <li><a href="academic.html#syllabus">Syllabus</a></li>
                                             <li><a href="academic.html#questionbank">Question Bank</a></li>
                                             <li><a href="academic.html#result">Results</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html#whyus">Why Us</a>
                                     </li>
                                     <!-- <li class="menu-item-has-children">
                                         <a href="#!">Pages</a>
@@ -164,8 +167,8 @@ Main Road In front Of Sidhidatta Hospital, Berhampur ,Ganjam,Odisha,Pin-760004. 
                                                 <li class="menu-item menu-item-has-children">
                                                     <a href="academic.html">Academics</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="academic.html#courses">Courses</a></li>
-                                                        <li><a href="academic.html#affiliation">Affiliation</a></li>
+                                                        <!--<li><a href="academic.html#courses">Courses</a></li>
+                                                        <li><a href="academic.html#affiliation">Affiliation</a></li>-->
                                                         <li><a href="academic.html#teams">Faculty</a></li>
                                                     </ul>
                                                 </li>

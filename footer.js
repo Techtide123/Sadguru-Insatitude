@@ -24,8 +24,8 @@ document.write(`
 "
                                                 alt="" style="width:34%;border-radius: 5px;"></a></div>
                                     <span class="xb-item--details">
-                                        Back side of Samrat Hotel, Ananta Nagar Street, 1st Ln, Tata Benz Square
-                                        Extension, Ram Nagar, Brahmapur, Odisha 760005
+                                       Goilundi 
+Main Road In front Of Sidhidatta Hospital, Berhampur ,Ganjam,Odisha,Pin-760004. 
                                     </span>
 
                                     <div class="xb-item--meta mt-20">
@@ -96,7 +96,7 @@ document.write(`
                 <div class="footer-bottom  ">
                     <div class="copyright text-center"
                         style="display: flex;justify-content: space-around;align-items: center; ">
-                        <p>Copyright © 2025 <a href="index.html">Urja Academy</a>|| All rights reserved.</p>
+                        <p>Copyright © 2025 <a href="index.html">Sadguru Institude</a>|| All rights reserved.</p>
                         <p>Powerd by <a href="https://tripstar.co.in"><img
                                     src="https://tripstar.co.in/assets/my-img/logo.png" alt=""
                                     style="height: 80px; width: 80px;object-fit: contain;"></a></p>
