@@ -55,10 +55,11 @@ document.write(`
                     <div class="header-top ul_li_between">
                         <div class="xb-help_desk">
                             <img src="assets/img/icon/hero_top-icon.png" alt="">
-                            <p>Help Desk : <span style="font-size: 14px;">+91 8328888962</span></p>
+                            <p>Help Desk : <span style="font-size: 14px;">+91 7205111345</span></p>
                         </div>
                         <div class="xb-info">
-                            <p>Location : <span style="font-size: 14px;">Anant nagar 1st Lane extension, Brahmapur, Odisha , 760005 </span>
+                            <p>Location : <span style="font-size: 14px;">Goilundi 
+Main Road In front Of Sidhidatta Hospital, Berhampur ,Ganjam,Odisha,Pin-760004.  </span>
                             </p>
                         </div>
                     </div>
@@ -197,7 +198,7 @@ document.write(`
                                 <div class="xb-header-menu-backdrop"></div>
                             </div>
                         </div>
-                        <div class="header-right ul_li">
+                        <!--<div class="header-right ul_li">
                             <a href="https://urrja-accademi.vercel.app/admin/login" class="admin-btn">
                                 <button type="button" class="btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -210,7 +211,7 @@ document.write(`
                                     Admin Panel
                                 </button>
                             </a>
-                        </div>
+                        </div>-->
                         <div class="header-bar-mobile side-menu d-lg-none">
                             <a class="xb-nav-mobile" href="javascript:void(0);"><i class="fal fa-bars"></i></a>
                         </div>

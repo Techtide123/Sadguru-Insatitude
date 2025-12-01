@@ -110,8 +110,8 @@ document.write(`
                 w.gbwawc = {
                     url: u,
                     options: {
-                        waId: "+91 8328888962",
-                        siteName: "Urja Academy",
+                        waId: "+91 7205111345",
+                        siteName: "Sadguru Institude",
                         siteTag: "Available",
                         siteLogo: "https://i.postimg.cc/fTc8zMf2/preloader.png",
                         widgetPosition: "LEFT",
